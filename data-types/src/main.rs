@@ -56,4 +56,25 @@ fn main() {
     println!("tuple: {:?}", o);
     println!("array: {:?}", p);
     println!("slice: {:?}", q);
+
+    shadowing();
+    let x = add_one(5);
+    println!("The return value of x is: {x}");
+}
+
+fn shadowing() {
+    let x = 5;
+
+    let x = x + 1;
+
+    {
+        let x = x * 2;
+        println!("The value of x in the inner scope is: {x}");
+    }
+
+    println!("The value of x is: {x}");
+}
+
+fn add_one(x: i32) -> i32 {
+    x + 10
 }
