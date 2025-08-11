@@ -1,0 +1,17 @@
+# Rust build output
+/target
+
+# IDE config
+/.idea
+
+# Optional: ignore lock file if you're writing a library
+# Cargo.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Swap/backup files
+*.swp
+*.swo
+*.bak
